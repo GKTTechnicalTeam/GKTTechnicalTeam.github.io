@@ -1,1 +1,0 @@
-# GKTTechnicalTeam.github.io
