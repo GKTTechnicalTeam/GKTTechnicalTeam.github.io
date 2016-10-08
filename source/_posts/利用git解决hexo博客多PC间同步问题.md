@@ -17,8 +17,19 @@ toc: true
 
 #配置过程
 1. 上传blog到git
-	- 删除文件夹内原有的.git缓存文件夹并编辑.gitignore文件
+	
+- 删除文件夹内原有的.git缓存文件夹并编辑.gitignore文件
 	- 初始化仓库
+	- blog根目录下执行以下代码：
+	> 	git init
+		git remote add origin <server>
+		<server>是指在线仓库的地址。origin是本地分支,remote add操作会将本地仓库映射到云端
+
 2. 将git的内容同步到本地
+ 
+	> 	git add .  #添加blog目录下所有文件，注意有个`.`（`.gitignore`声明过的文件不包含在内)
+		git commit -m "first commit" #添加更新说明
+		git push -u origin master #推送更新到云端服务器
+
 3. 更新文章后的同步操作
 4. 

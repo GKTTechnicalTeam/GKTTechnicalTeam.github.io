@@ -316,13 +316,29 @@
 <p>优点：部署完成后更新方便，hexo 更新完后只需要再更新全站到git即可<br>缺点：部署过程相对比较麻烦，对新手不友好</p>
 <p>#配置过程</p>
 <ol>
-<li>上传blog到git<ul>
-<li>删除文件夹内原有的.git缓存文件夹并编辑.gitignore文件</li>
+<li>上传blog到git</li>
+</ol>
+<ul>
+<li>删除文件夹内原有的.git缓存文件夹并编辑.gitignore文件<ul>
 <li>初始化仓库</li>
+<li>blog根目录下执行以下代码：<blockquote>
+<pre><code>git init
+</code></pre><p>  git remote add origin <server><br>  <server>是指在线仓库的地址。origin是本地分支,remote add操作会将本地仓库映射到云端</server></server></p>
+</blockquote>
+</li>
 </ul>
 </li>
-<li>将git的内容同步到本地</li>
-<li>更新文章后的同步操作</li>
+</ul>
+<ol>
+<li><p>将git的内容同步到本地</p>
+<blockquote>
+<pre><code>git add .  #添加blog目录下所有文件，注意有个`.`（`.gitignore`声明过的文件不包含在内)
+ git commit -m &quot;first commit&quot; #添加更新说明
+ git push -u origin master #推送更新到云端服务器
+</code></pre></blockquote>
+</li>
+<li><p>更新文章后的同步操作</p>
+</li>
 <li></li>
 </ol>
 
