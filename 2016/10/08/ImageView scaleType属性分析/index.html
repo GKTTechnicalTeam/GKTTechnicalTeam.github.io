@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="github," />
+  <meta name="keywords" content="Android," />
 
 
 
@@ -84,31 +84,58 @@
 
 
 
-<meta name="description" content="业务场景单位和家里两PC，同时都想更新blog。而由于hexo没有后台，而且全部文件都在本地生成，所以如果公司电脑上发表了A文章后回家又写了篇B文章，在家里上传后你会发现只有B文章而A文章没了（因为家里的PC上没有A文章的md文件），所以多台电脑同时用来写文章的时候，需要解决备份问题。
-#解决方案
+<meta name="description" content="ImageView scaleType 属性
 
-git
 
-优点：部署完成后更新方便，hexo 更新完后只需要再更新全站到git即可缺点：部署过程相">
+scaleType
+描述
+
+
+
+
+center
+将图片中心与 ImageView 的中心重合，保持图片的原始尺寸，只显示落在 ImageView 内部的图片部分
+
+
+centerCrop
+将图片中心与 ImageView 的中心重合，然后进行等比例缩放，直到图片宽高均不小于 ImageView 的宽高，位于 ImageView 之外的图片部分不显示">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用git解决hexo博客多PC间同步问题">
-<meta property="og:url" content="http://yoursite.com/2016/10/08/利用git解决hexo博客多PC间同步问题/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/10/08/ImageView scaleType属性分析/index.html">
 <meta property="og:site_name" content="Yeahmobi-GKT Team">
-<meta property="og:description" content="业务场景单位和家里两PC，同时都想更新blog。而由于hexo没有后台，而且全部文件都在本地生成，所以如果公司电脑上发表了A文章后回家又写了篇B文章，在家里上传后你会发现只有B文章而A文章没了（因为家里的PC上没有A文章的md文件），所以多台电脑同时用来写文章的时候，需要解决备份问题。
-#解决方案
+<meta property="og:description" content="ImageView scaleType 属性
 
-git
 
-优点：部署完成后更新方便，hexo 更新完后只需要再更新全站到git即可缺点：部署过程相">
-<meta property="og:updated_time" content="2016-10-08T06:39:37.085Z">
+scaleType
+描述
+
+
+
+
+center
+将图片中心与 ImageView 的中心重合，保持图片的原始尺寸，只显示落在 ImageView 内部的图片部分
+
+
+centerCrop
+将图片中心与 ImageView 的中心重合，然后进行等比例缩放，直到图片宽高均不小于 ImageView 的宽高，位于 ImageView 之外的图片部分不显示">
+<meta property="og:updated_time" content="2016-10-08T08:05:13.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用git解决hexo博客多PC间同步问题">
-<meta name="twitter:description" content="业务场景单位和家里两PC，同时都想更新blog。而由于hexo没有后台，而且全部文件都在本地生成，所以如果公司电脑上发表了A文章后回家又写了篇B文章，在家里上传后你会发现只有B文章而A文章没了（因为家里的PC上没有A文章的md文件），所以多台电脑同时用来写文章的时候，需要解决备份问题。
-#解决方案
+<meta name="twitter:description" content="ImageView scaleType 属性
 
-git
 
-优点：部署完成后更新方便，hexo 更新完后只需要再更新全站到git即可缺点：部署过程相">
+scaleType
+描述
+
+
+
+
+center
+将图片中心与 ImageView 的中心重合，保持图片的原始尺寸，只显示落在 ImageView 内部的图片部分
+
+
+centerCrop
+将图片中心与 ImageView 的中心重合，然后进行等比例缩放，直到图片宽高均不小于 ImageView 的宽高，位于 ImageView 之外的图片部分不显示">
 
 
 
@@ -129,7 +156,7 @@ git
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/08/利用git解决hexo博客多PC间同步问题/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/08/ImageView scaleType属性分析/"/>
 
   <title> 利用git解决hexo博客多PC间同步问题 | Yeahmobi-GKT Team </title>
 </head>
@@ -273,7 +300,7 @@ git
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-08T14:21:29+08:00" content="2016-10-08">
+            <time itemprop="dateCreated" datetime="2016-10-08T16:11:29+08:00" content="2016-10-08">
               2016-10-08
             </time>
           </span>
@@ -320,39 +347,112 @@ git
       
 
       
-        <h1 id="业务场景"><a href="#业务场景" class="headerlink" title="业务场景"></a>业务场景</h1><p>单位和家里两PC，同时都想更新blog。而由于hexo没有后台，而且全部文件都在本地生成，所以如果公司电脑上发表了A文章后回家又写了篇B文章，在家里上传后你会发现只有B文章而A文章没了（因为家里的PC上没有A文章的md文件），所以多台电脑同时用来写文章的时候，需要解决备份问题。</p>
-<p>#解决方案</p>
-<ul>
-<li>git</li>
-</ul>
-<p>优点：部署完成后更新方便，hexo 更新完后只需要再更新全站到git即可<br>缺点：部署过程相对比较麻烦，对新手不友好</p>
-<p>#配置过程</p>
-<ol>
-<li>上传blog到git</li>
-</ol>
-<ul>
-<li>删除文件夹内原有的.git缓存文件夹并编辑.gitignore文件<ul>
-<li>初始化仓库</li>
-<li>blog根目录下执行以下代码：<blockquote>
-<pre><code>git init
-</code></pre><p>  git remote add origin <server><br>  <server>是指在线仓库的地址。origin是本地分支,remote add操作会将本地仓库映射到云端</server></server></p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li><p>将git的内容同步到本地</p>
-<blockquote>
-<pre><code>git add .  #添加blog目录下所有文件，注意有个`.`（`.gitignore`声明过的文件不包含在内)
- git commit -m &quot;first commit&quot; #添加更新说明
- git push -u origin master #推送更新到云端服务器
-</code></pre></blockquote>
-</li>
-<li><p>更新文章后的同步操作</p>
-</li>
-<li></li>
-</ol>
+        <h1 id="ImageView-scaleType-属性"><a href="#ImageView-scaleType-属性" class="headerlink" title="ImageView scaleType 属性"></a>ImageView scaleType 属性</h1><table>
+<thead>
+<tr>
+<th>scaleType</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>center</td>
+<td>将图片中心与 ImageView 的中心重合，保持图片的原始尺寸，只显示落在 ImageView 内部的图片部分</td>
+</tr>
+<tr>
+<td>centerCrop</td>
+<td>将图片中心与 ImageView 的中心重合，然后进行等比例缩放，直到图片宽高均不小于 ImageView 的宽高，位于 ImageView 之外的图片部分不显示，缩放过程中保持图片宽高比</td>
+</tr>
+<tr>
+<td>centerInside</td>
+<td>将图片中心与 ImageView 的中心重合，如果图片全部位于 ImageView 内部，则完成，否则对图片等比例缩小直到图片宽高均不大于ImageView 的宽高</td>
+</tr>
+<tr>
+<td>fitCenter</td>
+<td>将图片中心与 ImageView 的中心重合，然后等比例进行缩放，直到图片宽高均不大于 ImageView 的宽高；fitCenter 与 centerInside 的区别在于：当图片原始尺寸小于 ImageView 时，后者不对图片做任何处理而前者对图片进行等比例放大直至其宽高至少有一项与 ImageView 对应的宽高相等</td>
+</tr>
+<tr>
+<td>fitStart</td>
+<td>将图片左上角与 ImageView 的左上角重合，其余和 fitCenter 相同</td>
+</tr>
+<tr>
+<td>fitEnd</td>
+<td>将图片右下角与 ImageView 的右下角重合，其余和 fitCenter 相同</td>
+</tr>
+<tr>
+<td>fitXY</td>
+<td>将图片的宽高缩放到与 ImageView 的宽高完全相同；缩放过程完全无视原始图片的宽高比</td>
+</tr>
+<tr>
+<td>matrix</td>
+<td>根据 setImageMatrix() 方法设置的 Matrix 类来显示图片，Matrix 类可以用来实现图片翻转等效果</td>
+</tr>
+</tbody>
+</table>
+<p>由上述图表可以看出，scaleType 可分为 3 大类：center，fit，matrix：</p>
+<p>以 center 开头的值表示将图片中心和 ImageView 中心重合，然后保持原始尺寸（center）或将图片缩放到圈在 ImageView 内部（centerInside）或将图片放大到覆盖 ImageView（centerCrop）；<br>以 fit 开头的值表示将图片的宽高缩放到至少有一项与 ImageView 的宽高相同，根据双方对准的起点分为中心（fitCenter）、左上角（fitStart）、右下角（fitEnd）或无起点（fitXY）；</p>
+<table>
+<thead>
+<tr>
+<th>scaleType</th>
+<th>图片和ImageView中心点重合</th>
+<th>保持图片原始尺寸</th>
+<th>保持图片宽高比</th>
+<th>显示图片与 ImageView 大比较</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>center</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>同图片原始尺寸和 ImageView 大小关系</td>
+</tr>
+<tr>
+<td>centerCrop</td>
+<td>√</td>
+<td>x</td>
+<td>√</td>
+<td>&gt;=</td>
+</tr>
+<tr>
+<td>centerInside</td>
+<td>√</td>
+<td>x</td>
+<td>√</td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td>fitCenter</td>
+<td>√</td>
+<td>x</td>
+<td>√</td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td>fitStart</td>
+<td>x</td>
+<td>x</td>
+<td>√</td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td>fitEnd</td>
+<td>x</td>
+<td>x</td>
+<td>√</td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td>fitXY</td>
+<td>√</td>
+<td>x</td>
+<td>x</td>
+<td>=</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -375,7 +475,7 @@ git
       
         <div class="post-tags">
           
-            <a href="/tags/github/" rel="tag">#github</a>
+            <a href="/tags/Android/" rel="tag">#Android</a>
           
         </div>
       
@@ -384,17 +484,13 @@ git
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/07/GitPage系列-Hexo使用方法/" rel="next" title="GitPage系列-使用方法">
-                <i class="fa fa-chevron-left"></i> GitPage系列-使用方法
+              <a href="/2016/10/08/利用git解决hexo博客多PC间同步问题/" rel="next" title="利用git解决hexo博客多PC间同步问题">
+                <i class="fa fa-chevron-left"></i> 利用git解决hexo博客多PC间同步问题
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/08/ImageView scaleType属性分析/" rel="prev" title="利用git解决hexo博客多PC间同步问题">
-                利用git解决hexo博客多PC间同步问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -519,7 +615,7 @@ git
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#业务场景"><span class="nav-number">1.</span> <span class="nav-text">业务场景</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ImageView-scaleType-属性"><span class="nav-number">1.</span> <span class="nav-text">ImageView scaleType 属性</span></a></li></ol></div>
             
           </div>
         </section>
