@@ -245,6 +245,135 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/08/利用git解决hexo博客多PC间同步问题/" itemprop="url">
+                  利用git解决hexo博客多PC间同步问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-08T14:21:29+08:00" content="2016-10-08">
+              2016-10-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/任垣宇/" itemprop="url" rel="index">
+                    <span itemprop="name">任垣宇</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="业务场景"><a href="#业务场景" class="headerlink" title="业务场景"></a>业务场景</h1><p>单位和家里两PC，同时都想更新blog。而由于hexo没有后台，而且全部文件都在本地生成，所以如果公司电脑上发表了A文章后回家又写了篇B文章，在家里上传后你会发现只有B文章而A文章没了（因为家里的PC上没有A文章的md文件），所以多台电脑同时用来写文章的时候，需要解决备份问题。</p>
+<p>#解决方案</p>
+<ul>
+<li>git</li>
+</ul>
+<p>优点：部署完成后更新方便，hexo 更新完后只需要再更新全站到git即可<br>缺点：部署过程相对比较麻烦，对新手不友好</p>
+<p>#配置过程</p>
+<ol>
+<li>上传blog到git<ul>
+<li>删除文件夹内原有的.git缓存文件夹并编辑.gitignore文件</li>
+<li>初始化仓库</li>
+</ul>
+</li>
+<li>将git的内容同步到本地</li>
+<li>更新文章后的同步操作</li>
+<li></li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/07/GitPage系列-Hexo使用方法/" itemprop="url">
                   GitPage系列-使用方法
                 </a>
@@ -312,121 +441,6 @@
 <h2 id="Next主题官方说明"><a href="#Next主题官方说明" class="headerlink" title="Next主题官方说明"></a>Next主题官方说明</h2><p><a href="http://theme-next.iissnan.com/" title="传送门">http://theme-next.iissnan.com/</a></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/10/07/GitPage系列-Hexo使用方法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/06/AndroidGradle自动化打包/" itemprop="url">
-                  AndroidStudio Gradle 自动化打包
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-06T08:55:29+08:00" content="2016-10-06">
-              2016-10-06
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/任垣宇/" itemprop="url" rel="index">
-                    <span itemprop="name">任垣宇</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Gradle打包优势"><a href="#Gradle打包优势" class="headerlink" title="Gradle打包优势"></a>Gradle打包优势</h2><p>因为部门业务的性质，APP产品需要对应多个渠道，多个国家输出不同需求，甚至不同支付逻辑的Apk版本，以前部门为了应对需求，采用的策略是一个APP产品对应渠道，国家开多套源码的分支，每一次打包需求过来，不同分支的APP首先便是要升级SDK，然后可能会将一些在别的分支上已经实现的逻辑拷贝到这个分支上，目前部门的APP产品信息记录在禅道文档已经更新到了65个，而部门APP产品（星座、FC、LookerPlus、Wallpaper、WallpaperCutey、Gamebar、ToolBox、SmartLocker、AppLocker、电池卫视、内存医生、WiFi增强器VideoPlus）等十三个独立App，平均每个APP存在6个版本的源码，除去破解产品本身特殊没办法统一源码，正式自研产品的版本也相当之多，现在每次打包拉源代码分支、替换包名、更换各项ID、升级SDK、测试等流程走一遍平均需要4小时左右，效率比较低下，也比较容易疏忽出错。而AndroidStudio Gradle打包方式能够实现一个自研App产品维护一套源码，输出多个渠道、用途的Apk包，能极大提升开发打包的效率、减少出错的可能性。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/06/AndroidGradle自动化打包/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -593,6 +607,121 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/06/AndroidGradle自动化打包/" itemprop="url">
+                  AndroidStudio Gradle 自动化打包
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-06T08:55:29+08:00" content="2016-10-06">
+              2016-10-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/任垣宇/" itemprop="url" rel="index">
+                    <span itemprop="name">任垣宇</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Gradle打包优势"><a href="#Gradle打包优势" class="headerlink" title="Gradle打包优势"></a>Gradle打包优势</h2><p>因为部门业务的性质，APP产品需要对应多个渠道，多个国家输出不同需求，甚至不同支付逻辑的Apk版本，以前部门为了应对需求，采用的策略是一个APP产品对应渠道，国家开多套源码的分支，每一次打包需求过来，不同分支的APP首先便是要升级SDK，然后可能会将一些在别的分支上已经实现的逻辑拷贝到这个分支上，目前部门的APP产品信息记录在禅道文档已经更新到了65个，而部门APP产品（星座、FC、LookerPlus、Wallpaper、WallpaperCutey、Gamebar、ToolBox、SmartLocker、AppLocker、电池卫视、内存医生、WiFi增强器VideoPlus）等十三个独立App，平均每个APP存在6个版本的源码，除去破解产品本身特殊没办法统一源码，正式自研产品的版本也相当之多，现在每次打包拉源代码分支、替换包名、更换各项ID、升级SDK、测试等流程走一遍平均需要4小时左右，效率比较低下，也比较容易疏忽出错。而AndroidStudio Gradle打包方式能够实现一个自研App产品维护一套源码，输出多个渠道、用途的Apk包，能极大提升开发打包的效率、减少出错的可能性。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/06/AndroidGradle自动化打包/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/23/Android逆向分析/" itemprop="url">
                   Andoroid 逆向分析
                 </a>
@@ -693,125 +822,13 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/23/Gradle入门到精通/" itemprop="url">
-                  Gradle入门到精通
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-23T16:51:29+08:00" content="2016-07-23">
-              2016-07-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/任垣宇/" itemprop="url" rel="index">
-                    <span itemprop="name">任垣宇</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Gradle是什么"><a href="#Gradle是什么" class="headerlink" title="Gradle是什么"></a>Gradle是什么</h2><p>Gradle与Ant和Maven一样都是依赖管理/自动化项目构建工具，但是与后者不同的是使用名为Groovy的语言而不是xml来编写，xml虽然通俗易懂，但是很难描述if/else的关系，而Groovy没有这种顾虑，gradle完全兼容Maven和ivy.</p>
-<h2 id="Groovy是什么"><a href="#Groovy是什么" class="headerlink" title="Groovy是什么"></a>Groovy是什么</h2><p>Groovy是一种动态语言，官方对其的定义是在Java平台上的、具有像Python、Ruby、Smalltalk语言特性的灵活性动态语言，Groovy保证了这些特性像Java语法一样使用，用大白话来说就是基于Java并扩展，使其编写起来像脚本一样，写完就跑，Groovy内部将其编译成字节码文件然后启动jvm来运行.<br>Groovy还有一个特点就是它是一种DSL(Domain Specific Language)领域相关语言。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/23/Gradle入门到精通/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -850,7 +867,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
